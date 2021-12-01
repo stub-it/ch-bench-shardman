@@ -16,7 +16,7 @@ diset tpcc pg_superuser $env(PGUSER)
 diset tpcc pg_defaultdbase $env(PGDATABASE)
 diset tpcc pg_pass $env(PGPASSWORD)
 diset tpcc pg_superuserpass $env(PGPASSWORD)
-#diset tpcc pg_storedprocs true
+diset tpcc pg_storedprocs true
 diset tpcc pg_count_ware 10
 diset tpcc pg_allwarehouse false
 diset tpcc pg_driver timed
