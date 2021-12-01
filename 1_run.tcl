@@ -20,12 +20,14 @@ diset tpcc pg_superuserpass $env(PGPASSWORD)
 diset tpcc pg_count_ware 500
 diset tpcc pg_allwarehouse false
 diset tpcc pg_driver timed
-diset tpcc pg_rampup 3
-diset tpcc pg_duration 60
+diset tpcc pg_rampup 0
+diset tpcc pg_duration 5
 loadscript
 #print script
 print dict
-vuset vu 250
+vuset vu 80
+#vuset vu 160
+#vuset vu 250
 vuset timestamps 1
 vuset logtotemp 1
 vuset showoutput 0
