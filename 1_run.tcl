@@ -17,7 +17,7 @@ diset tpcc pg_defaultdbase $env(PGDATABASE)
 diset tpcc pg_pass $env(PGPASSWORD)
 diset tpcc pg_superuserpass $env(PGPASSWORD)
 #diset tpcc pg_storedprocs true
-diset tpcc pg_count_ware 500
+diset tpcc pg_count_ware 499
 diset tpcc pg_allwarehouse false
 diset tpcc pg_driver timed
 diset tpcc pg_rampup 0
@@ -25,14 +25,14 @@ diset tpcc pg_duration 5
 loadscript
 #print script
 print dict
-vuset vu 80
+vuset vu 83
 #vuset vu 160
 #vuset vu 250
 vuset timestamps 1
 vuset logtotemp 1
 vuset showoutput 0
 vuset unique 1
-vuset delay 100
+vuset delay 101
 vuset repeat 1
 vurun
 #wait_to_complete
