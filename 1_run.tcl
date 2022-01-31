@@ -25,9 +25,9 @@ diset tpcc pg_duration 5
 loadscript
 #print script
 print dict
-vuset vu 83
+#vuset vu 83
 #vuset vu 160
-#vuset vu 250
+vuset vu 250
 vuset timestamps 1
 vuset logtotemp 1
 vuset showoutput 0
